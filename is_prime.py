@@ -7,14 +7,14 @@ Created on Wed Jan 30 10:10:58 2019
 """
 from primes import is_prime
 
-print("Enter a positive integer.\nI'll tell you if its a prime.", end = '')
+print('Enter a positive integer.\nI\'ll tell you if its a prime.')
+print('Or enter 0 to exit', end = '')
 n = input()
 i = int(n)
 while i != 0:
-    print(n + ' is', end = ' ')
+    s = n + ' is '
     if not is_prime(i):
-        print('not', end = ' ')
-    print('a prime integer.')
-    print('Enter 0 to exit', end = '')
+        s += 'not '
+    print(s + 'a prime integer.', end = ' ')
     n = input()
     i = int(n)

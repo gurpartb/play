@@ -11,10 +11,12 @@ def is_prime(i):
         return False
     j = 2
     p = True
-    while p == True and j*j <= i:
+    q = j*j <= i
+    while p and q:
         if i % j == 0:
             p = False
         j += 1
+        q = j*j <= i
     return p
 
 def nth_prime(i):
