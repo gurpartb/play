@@ -18,12 +18,12 @@ def is_prime(i):
     return p
     
 i = 1
-print("Enter a positive integer.\nI'll tell you if its a prime.\n")
+print("Enter a positive integer.\nI'll tell you if its a prime.", end = '')
 while i != 0:
     n = input()
     i = int(n)
-    if is_prime(i):
-        print(n + ' is a prime integer.')
-    else:
-        print(n + ' is not a prime integer.')
-    print('Enter 0 to exit')
+    print(n + ' is', end = ' ')
+    if not is_prime(i):
+        print('not', end = ' ')
+    print('a prime integer.')
+    print('Enter 0 to exit', end = '')
