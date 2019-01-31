@@ -27,3 +27,14 @@ def nth_prime(i):
         if is_prime(j):
             c += 1
     return j
+
+def n_primes(i):
+    p = [0]*i
+    j = 1
+    c = 0
+    while c < i:
+        j += 1
+        if is_prime(j):
+            p[c] = j
+            c += 1
+    return p

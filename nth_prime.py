@@ -9,11 +9,11 @@ from primes import nth_prime
 from grammar import suffix
     
 print("Enter a positive integer 'n'.\nI'll return the nth prime.")
-print('Or enter 0 to exit', end = '')
+print('Or enter 0 to exit')
 n = input()
 i = int(n)
 while i != 0:
     j = nth_prime(i)
-    print(n+suffix(i) +' prime is '+ str(j), end = '')
+    print(n+suffix(i) +' prime is '+ str(j))
     n = input()
     i = int(n)
