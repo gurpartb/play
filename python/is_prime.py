@@ -18,3 +18,4 @@ while i != 0:
     print(s + 'a prime integer.')
     n = input()
     i = int(n)
+    
